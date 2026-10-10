@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <header>
+      <p class="eyebrow">WEATHER APP</p>
+      <h1>Weather Dashboard</h1>
+      <p class="subtitle">Explore the weather in your favorite cities.</p>
+    </header>
+
+    <form id="searchForm" class="search">
+      <input id="cityInput" type="text"
+        placeholder="Enter a city (e.g. Lahore)" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message" role="status">Try Lahore, Karachi, London or Tokyo.</p>
+
+    <section class="weather-card">
+      <div class="weather-top">
+        <div>
+          <p class="eyebrow">CURRENT WEATHER</p>
+          <h2 id="cityName">Lahore, Pakistan</h2>
+          <p id="condition">Sunny</p>
+        </div>
+        <span id="weatherIcon" class="weather-icon">☀️</span>
+      </div>
+
+      <div class="temperature">
+        <span id="temperature">32</span><span id="unit">°C</span>
+      </div>
+
+      <div class="details">
+        <div><span>Feels like</span><strong id="feelsLike">34°C</strong></div>
+        <div><span>Humidity</span><strong id="humidity">45%</strong></div>
+        <div><span>Wind</span><strong id="wind">12 km/h</strong></div>
+      </div>
+
+      <button id="unitButton" class="unit-button" type="button">
+        Switch to °F
+      </button>
+    </section>
+
+    <section class="recent-section">
+      <h2>Recent searches</h2>
+      <div id="recentCities" class="recent-cities"></div>
+    </section>
+
+    <footer>Built with HTML, CSS & JavaScript ✨</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
